@@ -31,7 +31,7 @@ class App extends Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.newTodo) {return}
-    let createTodo = { todo: this.state.newTodo, isComplete: false };
+    let createTodo = { descriptor: this.state.newTodo, isComplete: false };
     this.setState({ todo: [...this.state.todo, createTodo], newTodo: ""});
   }
 
